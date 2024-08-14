@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const TestimonialCard = ({image, text, name, position}) => {
   return (
-    <div className='bg-[#F8F8F8] flex flex-col lg:flex-row lg:p-8 p-2 rounded-md my-10 justify-between w-full justify-items-center items-center'>
+    <div className='bg-[#F8F8F8] flex text-black flex-col lg:flex-row lg:p-8 p-2 rounded-md my-10 justify-between w-full justify-items-center items-center'>
         <Image src={image} width={150} height={150} alt='testimonial' className='xlllll:scale-150 xlllll:ml-10 lg:scale-100 scale-75'/>
         <div className='flex flex-col w-full lg:w-3/4 xlllll:w-2/3 xxl:w-2/3'>
             <span className='flex'>

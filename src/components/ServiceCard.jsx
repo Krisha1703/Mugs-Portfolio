@@ -4,7 +4,7 @@ import {Tilt} from 'react-next-tilt';
 const ServiceCard = ({ image, title, text, app }) => {
   return (
     <Tilt>
-    <div className="rounded-md bg-[#F8F8F8] p-4 py-10 w-full max-w-sm flex flex-col gap-4">
+    <div className="rounded-md bg-[#F8F8F8] text-black p-4 py-10 w-full max-w-sm flex flex-col gap-4">
       <div className="relative w-1/2 h-20 flex items-start">
         <Image
           src={image}

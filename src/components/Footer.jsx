@@ -8,7 +8,7 @@ function Footer({ isLightTheme }) {
   return (
     <section>
         <nav className={`flex flex-col lg:my-0 justify-items-center ${isLightTheme ? 'bg-[#F8F8F8]' : 'bg-[#1F1F1F]'} items-center justify-center w-full mx-auto p-6`}>
-            <Image src={isLightTheme ? "/Light-logo.png" : "/Logo.png"}  width={200} height={200} alt='logo' className='my-8 xlllll:scale-150'/>
+            <Image src={isLightTheme ? "/Light-logo.png" : "/Dark-Logo.png"}  width={200} height={200} alt='logo' className='my-8 xlllll:scale-150'/>
             <ul className={`list-none flex flex-col lg:flex-row ${isLightTheme ? 'text-black' : 'text-white'} text-md xlllll:text-[1.5rem] justify-items-center items-center my-8`}>
                 <NavbarMenus Menu="Home" />
                 <NavbarMenus Menu="About Me" />

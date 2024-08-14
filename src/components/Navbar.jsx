@@ -14,7 +14,7 @@ function Navbar({ isLightTheme, scrollToAbout, scrollToServices, scrollToProject
     <section className='flex justify-center items-center w-full px-6 py-6 lg:py-4'>
       <div className='flex items-center space-x-6'>
         <Image 
-          src={isLightTheme ? "/Light-logo.png" : "/Logo.png"} 
+          src={isLightTheme ? "/Light-logo.png" : "/Dark-Logo.png"} 
           width={200} 
           height={200} 
           alt='logo' 

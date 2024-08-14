@@ -20,14 +20,31 @@ export default function Home() {
 
   // Optimized components using react memo
   const MemoizedSection = memo(Section);
+  MemoizedSection.displayName = 'MemoizedSection';
+
   const MemoizedNavbar = memo(Navbar);
-  const MemoizedAbout = memo(() => <About isLightTheme={isLightTheme} />);
-  const MemoizedSkills = memo(() => <Skills isLightTheme={isLightTheme} />);
+  MemoizedNavbar.displayName = 'MemoizedNavbar';
+
+  const MemoizedAbout = memo((props) => <About {...props} isLightTheme={isLightTheme} />);
+  MemoizedAbout.displayName = 'MemoizedAbout';
+
+  const MemoizedSkills = memo((props) => <Skills {...props} isLightTheme={isLightTheme} />);
+  MemoizedSkills.displayName = 'MemoizedSkills';
+
   const MemoizedServices = memo(Services);
-  const MemoizedProjects = memo(() => <Projects isLightTheme={isLightTheme} />);
+  MemoizedServices.displayName = 'MemoizedServices';
+
+  const MemoizedProjects = memo((props) => <Projects {...props} isLightTheme={isLightTheme} />);
+  MemoizedProjects.displayName = 'MemoizedProjects';
+
   const MemoizedTestimonals = memo(Testimonals);
-  const MemoizedContact = memo(() => <Contact isLightTheme={isLightTheme} />);
-  const MemoizedFooter = memo(() => <Footer isLightTheme={isLightTheme} />);
+  MemoizedTestimonals.displayName = 'MemoizedTestimonals';
+
+  const MemoizedContact = memo((props) => <Contact {...props} isLightTheme={isLightTheme} />);
+  MemoizedContact.displayName = 'MemoizedContact';
+
+  const MemoizedFooter = memo((props) => <Footer {...props} isLightTheme={isLightTheme} />);
+  MemoizedFooter.displayName = 'MemoizedFooter';
 
   return (
     <main className={`relative ${isLightTheme ? 'bg-white text-black' : 'bg-[#1E1E1E] text-white'}`}>

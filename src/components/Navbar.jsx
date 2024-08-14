@@ -60,13 +60,21 @@ function Navbar({ isLightTheme, scrollToAbout, scrollToServices, scrollToProject
             <NavbarMenus Menu="Projects" scrollToSection={scrollToProjects}/>
             <NavbarMenus Menu="Testimonals" scrollToSection={scrollToTestimonals}/>
             <NavbarMenus Menu="Contact" scrollToSection={scrollToContact}/>
-            <motion.button 
-              className={`bg-[#FD6F00] text-white text-md justify-items-center items-center p-2 px-6 mx-4 rounded-md`}
-              whileHover={{x:20, color: "#FD6F00", backgroundColor: "white", fontWeight: 700}}
-              transition={{ease: "easeInOut", duration: 0.3}}
+
+            <a 
+              href="/Krisha-Botadara.pdf" 
+              download="Krisha-Botadara.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Download CV
-            </motion.button>
+              <motion.button 
+                className={`bg-[#FD6F00] text-white text-md justify-items-center items-center p-2 px-6 mx-4 rounded-md`}
+                whileHover={{x:20, color: "#FD6F00", backgroundColor: "white", fontWeight: 700}}
+                transition={{ease: "easeInOut", duration: 0.3}}
+              >
+                Download CV
+              </motion.button>
+            </a>
           </ul>
         </nav>
 

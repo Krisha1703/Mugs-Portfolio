@@ -7,8 +7,9 @@ const Heading = dynamic(() => import("./Heading"), { ssr: false });
 
 const Skills = ({ isLightTheme }) => {
     return (
-        <section className='flex flex-col lg:flex-row w-full mx-auto justify-items-center items-center justify-around'>
-            <Image src="/skills.png" width={400} height={400} alt="skills" />
+        <section className='flex flex-col lg:flex-row w-full mx-auto justify-items-center relative items-center justify-around'>
+             <Image src="/skills.png" width={400} height={400} alt="about" className="relative z-10" />
+             <div className="bg-[#FD6F00] opacity-40 absolute inset-0 z-20 w-[20vw] h-[10vh]" style={{ top: '15%',left: '10%' }}></div>
             <div className={`flex flex-col ${isLightTheme ? 'text-black' : 'text-white'} lg:w-1/2 w-5/6`}>
                 <Heading Text="About Me" />
 

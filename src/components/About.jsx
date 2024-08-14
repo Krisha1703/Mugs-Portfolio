@@ -52,7 +52,7 @@ const About = ({ isLightTheme }) => {
         <section className='flex flex-col lg:flex-row w-11/12 mx-auto justify-items-center items-center justify-around' id="about">
             <div className={`flex flex-col ${isLightTheme ? 'text-black' : 'text-white'} lg:w-1/2 w-5/6`}>
                 <h1 className="text-[1.5rem]">Hi I am</h1>
-                <div className="whitespace-pre-line text-orange-500 font-semibold text-[1.5rem]">
+                <div className="whitespace-pre-line text-[#FD6F00] font-semibold text-[1.5rem]">
                     {typingCompleted ? words[0] : currentText}
                 </div>
                 <div className="whitespace-pre-line">
@@ -79,9 +79,11 @@ const About = ({ isLightTheme }) => {
             </div>
 
             <div className="flex flex-col">
-                <Image src="/about.png" width={400} height={400} alt="about" className=""/>
+                <Image src="/about.png" width={400} height={400} alt="about" className="relative z-10" />
+                <div className="bg-[#FD6F00] opacity-40 absolute inset-0 z-20 w-[20vw] h-[10vh] sssm:hidden xl:block" style={{ top: '3.7%',left: '65%' }}></div>
                 <MediaIcons isLightTheme={isLightTheme} />
             </div>
+           
         </section>
     );
 }
